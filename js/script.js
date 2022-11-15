@@ -29,8 +29,8 @@ const app = new Vue({
             this.newTodo.todo = '';
         },
         changeStatus() {
-            if (this.arrTodo[status]) {
-                !this.arrTodo[status]
+            if (this.arrTodo.status) {
+                !this.arrTodo.status
             }
 
         }
