@@ -4,7 +4,7 @@ const app = new Vue({
         arrTodo: [
             {
                 todo: 'Studiare',
-                status: true,
+                status: false,
             },
             {
                 todo: 'Fare la spesa',
@@ -12,7 +12,7 @@ const app = new Vue({
             },
             {
                 todo: 'Cucinare',
-                status: true,
+                status: false,
             },
         ],
         inputTextTodo:"",

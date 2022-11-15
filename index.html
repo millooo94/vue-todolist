@@ -24,10 +24,10 @@
         </div>
         <div class="row justify-content-center">
             <div class="todos-container col-6 mt-5">
-                <h2 class="text-center fs-3" v-if="arrTodo.length == 0">Non ci sono todo</h2>
+                <h2 v-cloak class="text-center fs-3" v-if="arrTodo.length == 0">Non ci sono todo</h2>
                 <ul v-else>
                     <li class="d-flex justify-content-between align-items-center" v-for="(item, i) in arrTodo" :key="item.todo">
-                        <span @click="changeStatus(item)" :style= "item.status == true ? {textDecoration: 'line-through'} : ''">{{item.todo}}</span>
+                        <span v-cloak @click="changeStatus(item)" :style= "item.status == true ? {textDecoration: 'line-through'} : ''">{{item.todo}}</span>
                         <i class="fa-solid fa-xmark" @click="removeTodo(i)"></i>  
                     </li>
                 </ul>
