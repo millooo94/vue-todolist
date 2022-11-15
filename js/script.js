@@ -23,7 +23,7 @@ const app = new Vue({
         },
         addTodo(){
             if(this.inputTextTodo.trim()){
-                this.arrTodo.push({todo: this.inputTextTodo.trim(), status:true});
+                this.arrTodo.push({todo: this.inputTextTodo.trim(), status:false});
                 this.inputTextTodo = '';
             }
             
