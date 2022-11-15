@@ -1,3 +1,37 @@
-.row {
-    gap: 10rem;
+img {
+    min-width: 180px;
+    max-width: 280px !important;
+}
+
+input, button {
+    padding: .3rem;
+    border-radius: 10px !important;
+    font-size: 1rem !important;
+}
+
+.todos-container {
+    background-color: #f5f7f7;
+    border-radius: 10px;
+
+}
+
+ul {
+    padding: 0 !important;
+    list-style-type: none;
+}
+
+
+li {
+    border-bottom: 1px solid darkgray;
+    padding: 1rem;
+    margin: 2.5rem 1rem 2.5rem 1rem;
+    border-radius: 10px;
+}
+
+li:hover {
+    background-color: white;
+}
+
+i:hover {
+    color: red;
 }

@@ -4,7 +4,7 @@ const app = new Vue({
         arrTodo: [
             {
                 todo: 'Studiare',
-                status: false,
+                status: true,
             },
             {
                 todo: 'Fare la spesa',
@@ -12,27 +12,29 @@ const app = new Vue({
             },
             {
                 todo: 'Cucinare',
-                status: false,
+                status: true,
             },
         ],
-        newTodo: {
-            todo: '',
-            status: false
-        }
+        inputTextTodo:"",
     },
     methods: {
         removeTodo(index){
             this.arrTodo.splice(index, 1)
         },
         addTodo(){
-            this.arrTodo.push(this.newTodo)
-            this.newTodo.todo = '';
-        },
-        changeStatus() {
-            if (this.arrTodo.status) {
-                !this.arrTodo.status
+            if(this.inputTextTodo.trim()){
+                this.arrTodo.push({todo: this.inputTextTodo.trim(), status:true});
+                this.inputTextTodo = '';
             }
-
+            
+            
+        },
+        changeStatus(element) {
+            if (element.status) {
+                element.status = false
+            } else {
+                element.status = true
+            }
         }
     },
 })
