@@ -8,7 +8,7 @@ const app = new Vue({
             },
             {
                 todo: 'Fare la spesa',
-                status: true,
+                status: false,
             },
             {
                 todo: 'Cucinare',
